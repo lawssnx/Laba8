@@ -72,3 +72,34 @@ html {
     cursor: pointer;
     outline: none;
 }
+
+.button-wrapper {
+  display: flex;
+}
+
+.Deleted-Tasks {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  margin-left: 13px;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 45px; 
+  height: 32.59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImageBin {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.TodoChecked {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #fff;
+}

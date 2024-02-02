@@ -1,0 +1,33 @@
+.deletedItem {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.deletedId {
+    margin-right: 10px;
+    color: #3b1b56;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.deletedText {
+    color: #3f257f;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+button {
+    margin-left: auto;
+    margin-right: 18px;
+    background: none;
+    border: none;
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

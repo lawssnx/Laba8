@@ -1,0 +1,51 @@
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.Deleted-Task {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #a293ca;
+    padding-left: 15px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.modal-content h2 {
+    color: #3f2b70;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #a293ca;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
