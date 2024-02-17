@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import image from "../../img/bin.png";
 import { TodoForm } from "./todo-form";
 import { Todo } from "./todo";
 import { Modal } from "../Modal/modal";
 
 export const TodoWrapper = () => {
-    const [todos, setTodos] = useState([]);
-    const [modalWindow, setModalWindow] = useState(false);
+    const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) || []);
     const [deletedTodos, setDeletedTodos] = useState([]);
+    const [modalWindow, setModalWindow] = useState(false);
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos))
+    }, [todos])
 
     const addTodo = (newTodo) => {
         if (newTodo !== "") {
@@ -37,7 +41,6 @@ export const TodoWrapper = () => {
             console.error("Todo not found in deletedTodos");
         }
     }
-
 
     return (
         <div className="Todo-Wrapper">
